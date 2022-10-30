@@ -1,4 +1,4 @@
-var clock = Number(prompt('Введите время'))
+var clock = Number(prompt('Введите время от 0 до 24'))
 
 if(clock == 1 || clock == 21){
     console.log(`${clock} час ночи`);
@@ -17,4 +17,7 @@ else if(clock >= 18 && clock <= 20){
 }
 else if(clock >= 22 && clock <= 24){
     console.log(`${clock} часа ночи`);
+}
+else{
+    console.log('не верное число');
 }
